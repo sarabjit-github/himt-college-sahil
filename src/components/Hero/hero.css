@@ -145,6 +145,7 @@
 
 @media (max-width:990px) {
   .hero-section{
+    justify-content: center;
     flex-direction: column-reverse;
     text-align: center;
   }
@@ -155,7 +156,7 @@
     max-width: 700px;
   }
   .hero-section .right img{
-    max-width: 400px;
+    max-width: 500px;
   }
   .degree-con {
     gap: 1rem;

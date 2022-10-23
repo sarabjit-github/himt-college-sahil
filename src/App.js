@@ -12,9 +12,9 @@ function App() {
       <Navbar />
       <div className="top-con">
         <Routes>
-          <Route exact path="/" element={<Hero />}  />
-          <Route exact path="/about" element={<About />} />
-          <Route exact path="/gallery" element={<Gallery />} />
+          <Route path="/" element={<Hero />}  />
+          <Route path="/about" element={<About />} />
+          <Route path="/gallery" element={<Gallery />} />
         </Routes>
       </div>
       <Footer />

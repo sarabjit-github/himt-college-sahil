@@ -51,7 +51,7 @@ header nav a{
     font-size: 1.2rem;
     transition: .3s;
 }
-header nav a:hover{
+header nav a:hover, header nav a.active{
     color: crimson;
 }
 @media (max-width:425px) {
