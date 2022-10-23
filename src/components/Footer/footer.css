@@ -21,6 +21,15 @@ footer{
     fill: var(--primary-color);
     transform: scale(1.05);
 }
+.source-code{
+    margin-top: 1.2rem;
+    text-align: center;
+}
+.source-code a{
+    text-decoration: none;
+    color: var(--primary-color);
+    font-size: 1.2rem;
+}
 .footer-nav{
     display: flex;
     justify-content: center;
@@ -31,7 +40,7 @@ footer{
 .footer-nav a{
     text-decoration: none;
     color: var(--gray-color);
-    font-size: 1rem;
+    font-size: 1.1rem;
     transition: .3s;
 }
 .footer-nav a:hover{

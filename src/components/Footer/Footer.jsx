@@ -62,6 +62,7 @@ export const Footer = () => {
             <Link to="/gallery">Gallery</Link>
             <Link to="/about">About</Link>
           </nav>
+          <div className="source-code"><a href="https://github.com/sarabjit-github/himt-college-sahil" target="_blank" rel="noreferrer">&lt;Source code	&#47;&gt;</a></div>
         <div className="copyright">
           <p>&copy; 2022 Copyright | All rights reserved</p>
           <Link to="/" className="logo">

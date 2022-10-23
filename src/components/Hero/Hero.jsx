@@ -3,6 +3,7 @@ import "./hero.css";
 import buildingImg from "../../images/building.jpeg";
 import graduationImg from "../../images/Graduation.svg";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 export const Hero = () => {
   const degreesArr = [
@@ -31,26 +32,50 @@ export const Hero = () => {
         "The full form of PGDCA is Post Graduate Diploma in Computer Application. PGDCA is a postgraduate course available by many Universities in India recognized by UGC. The course duration is one year and includes two semesters.",
     },
   ];
+  const transition = { duration: 1.5, type: "spring", bounce: 0.35 };
   return (
     <>
       <main className="hero-main">
         <section className="hero-section">
           <div className="left">
-            <h1>
+            <motion.h1
+              initial={{ y: 100, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1 }}
+              viewport={{ once: true }}
+              transition={transition}
+            >
               <span>HIMT</span> Best <span>IT College</span> in Hoshiarpur
-            </h1>
-            <p>
+            </motion.h1>
+            <motion.p
+              initial={{ y: 100, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ ...transition, delay: 0.2 }}
+            >
               "Hari Prakash Institute of management and technology Affiliated
               with Punjab technical University. Also known as HIMT College." You
               got best learning from our college. This is our promise.
-            </p>
-            <Link to="/about">
-              <button>Learn more</button>
-            </Link>
+            </motion.p>
+            <motion.div
+              initial={{ y: 100, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ ...transition, delay: 0.3 }}
+            >
+              <Link to="/about">
+                <button>Learn more</button>
+              </Link>
+            </motion.div>
           </div>
-          <div className="right">
+          <motion.div
+            className="right"
+            initial={{ y: 100, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ ...transition, delay: 0.2 }}
+          >
             <img src={buildingImg} alt="building img" />
-          </div>
+          </motion.div>
         </section>
         <section className="degree-section">
           <h1 className="mid-heading">
@@ -59,14 +84,21 @@ export const Hero = () => {
           <div className="degree-con">
             {degreesArr.map(({ id, degree, degreeAbout }) => {
               return (
-                <div className="degree" key={id}>
+                <motion.div
+                  className="degree"
+                  key={id}
+                  initial={{ y: 100, opacity: 0 }}
+                  whileInView={{ y: 0, opacity: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ ...transition, delay: `0.${id}` }}
+                >
                   <div className="degree-head">
                     <img src={graduationImg} width={80} alt="graduation img" />
                     <h1>{degree}</h1>
                   </div>
                   <div className="degree-txt">{degreeAbout}</div>
                   <button>Learn more</button>
-                </div>
+                </motion.div>
               );
             })}
           </div>
