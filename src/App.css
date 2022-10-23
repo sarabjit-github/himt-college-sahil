@@ -16,8 +16,6 @@ html,body{
   --secondary-color: coral;
   --gray-color: #2B3344;
 }
-
-
 .App{
   max-width: 1440px;
   margin: 0 auto;
@@ -28,4 +26,9 @@ html,body{
   top: 90px;
   height: 100%;
   margin-bottom: 100px;  /* Beacause we change its relative position to 90px, due this it creates a overlapping upto 90px bottom */
+}
+@media (max-width: 768px) {
+  html, body{
+    font-size: 14px;
+  }
 }

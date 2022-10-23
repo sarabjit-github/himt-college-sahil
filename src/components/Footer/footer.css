@@ -12,7 +12,7 @@ footer{
 }
 .icons-con a svg{
     /* text-decoration: none; */
-    width: 50px;
+    width: 3rem;
     height: auto;
     fill: var(--gray-color);
     transition: .3s;
@@ -55,4 +55,13 @@ footer{
 .copyright .logo{
     margin-top: 1rem;
     transform: scale(.8);
+}
+@media (max-width:425px) {
+    .icons-con{
+        gap: 1.5rem;
+        margin-top: 1.5rem;
+    }
+    .icons-con a svg{
+        width: 2rem;
+    }
 }

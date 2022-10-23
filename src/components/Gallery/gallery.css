@@ -1,0 +1,27 @@
+.gallery-sec{
+    margin-top: 3rem;
+}
+.gallery-sec h1{
+    font-size: 3.5rem;
+}
+.img-con{
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+    flex-wrap: wrap;
+    position: relative;
+}
+.img-con img{
+    max-width: 450px;
+    width: 100%;
+    height: auto;
+    transition: .3s;
+    border-radius: 30px;
+    outline: 1px solid rgba(0, 0, 0, 0.3);
+  outline-offset: 8px;
+}
+.img-con img:hover{
+    scale: 1.1;
+}

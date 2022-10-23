@@ -54,3 +54,17 @@ header nav a{
 header nav a:hover{
     color: crimson;
 }
+@media (max-width:425px) {
+    .logo{
+        gap: 5px;
+    }
+    .logo img{
+        width: 40px;
+    }
+    .logo span{
+        font-size: 1.8rem;
+    }
+    header nav{
+        gap: 1rem;
+    }
+}

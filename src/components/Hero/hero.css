@@ -1,9 +1,8 @@
-
 .hero-main {
   padding: 0 1rem;
 }
 .hero-section {
-  margin-top: 10rem;
+  min-height: calc(100vh - 120px);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -36,12 +35,12 @@
 .hero-section .left button {
   margin-top: 2rem;
   border: none;
-  border-radius: 6px;
+  border-radius: 26px;
   padding: 0.8rem 1.6rem;
   outline: none;
   background: rgba(220, 20, 60, 0.85);
   color: white;
-  font-size: 1.2rem;
+  font-size: 1.15rem;
   cursor: pointer;
   transition: 0.3s;
 }
@@ -64,7 +63,7 @@
 
 /* Degree section */
 .degree-section {
-  margin-top: 10rem;
+  margin-top: 5rem;
 }
 .mid-heading {
   font-size: 3rem;
@@ -127,4 +126,52 @@
 }
 .degree button:hover {
   background-color: coral;
+}
+
+
+/* Media Queries */
+@media (max-width:1360px) {
+  .hero-section h1 {
+    max-width: 500px;
+    font-size: 3rem;
+  }
+  .mid-heading {
+    font-size: 2.5rem;
+  }
+  .degree-head h1 {
+    font-size: 2.25rem;
+  }
+}
+
+@media (max-width:990px) {
+  .hero-section{
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  .hero-section .left p{
+    margin: auto;
+  }
+  .hero-section h1{
+    max-width: 700px;
+  }
+  .hero-section .right img{
+    max-width: 400px;
+  }
+  .degree-con {
+    gap: 1rem;
+  }
+}
+@media (max-width: 768px) {
+  .degree-con{
+    grid-template-columns: auto;
+  }
+}
+@media (max-width: 420px) {
+  .hero-section h1 {
+    font-size: 2.5rem;
+    line-height: 1.1;
+  }
+  .mid-heading {
+    font-size: 2.15rem;
+  }
 }
